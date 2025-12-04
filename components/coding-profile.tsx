@@ -3,14 +3,14 @@
 import { portfolioData } from "@/lib/portfolio-data"
 import { Github, Linkedin, Code2, Zap, ExternalLink } from "lucide-react"
 import { cn } from "@/lib/utils"
+import Link from "next/link"
 
-// ⚠️ Add icons here for each platform you use
 const iconMap = {
   linkedin: Linkedin,
   github: Github,
-  leetcode: Code2, // TEMP: Using Code2 unless you add custom icon
-  tuf: Zap, // TEMP: Using Zap
-  gfg: Zap, // alias
+  leetcode: Code2, 
+  tuf: Zap,
+  gfg: Zap,
   codechef: Code2,
 }
 
@@ -106,7 +106,7 @@ export default function CodingProfilesSection() {
                   </div>
 
                   {/* Button */}
-                  <a href={profile.url} target="_blank" rel="noopener noreferrer">
+                  <Link href={profile.url} target="_blank" rel="noopener noreferrer">
                     <button
                       className={cn(
                         "w-full py-2 px-4 rounded-lg cursor-pointer font-medium text-sm transition-all duration-300",
@@ -116,7 +116,7 @@ export default function CodingProfilesSection() {
                     >
                       Visit Profile
                     </button>
-                  </a>
+                  </Link>
                 </div>
               </a>
             )

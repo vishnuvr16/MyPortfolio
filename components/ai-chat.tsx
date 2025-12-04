@@ -5,7 +5,6 @@ import { useState, useRef, useEffect, useCallback } from "react"
 import { MessageCircle, Send, X, Minimize2, Maximize2 } from "lucide-react"
 import { cn } from "@/lib/utils"
 
-// --- Type Definitions ---
 interface Message {
   id: string
   role: "user" | "assistant"
@@ -19,8 +18,8 @@ interface Size {
 }
 
 interface Position {
-  x: number // Represents CSS 'left' property
-  y: number // Represents CSS 'top' property
+  x: number
+  y: number
 }
 
 type ResizeDirection =
@@ -78,15 +77,15 @@ export default function AIChat() {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
   }
 
-  // Calculate Initial Position (Anchored to Bottom-Right)
+  // Calculate Initial Position (Bottom Right Corner)
   const calculateInitialPosition = useCallback(() => {
-    // Only calculate initial position if the user hasn't moved it yet
+
     if (!hasUserMoved) {
         const initialX = window.innerWidth - chatSize.width - ANCHOR_OFFSET
         const initialY = window.innerHeight - chatSize.height - ANCHOR_OFFSET
         setChatPosition({ x: initialX, y: initialY })
     }
-  }, [chatSize.height, chatSize.width, hasUserMoved]) // Depend on hasUserMoved
+  }, [chatSize.height, chatSize.width, hasUserMoved])
 
   // Toggle open/close state
   const handleOpenToggle = useCallback(() => {
@@ -131,7 +130,6 @@ export default function AIChat() {
     e.preventDefault()
   }
 
-  // This is the core logic that handles both movement and resizing
   const updateWindow = useCallback((e: MouseEvent) => {
     if (isDragging) {
       // DRAGGING LOGIC
@@ -252,42 +250,10 @@ export default function AIChat() {
     scrollToBottom()
   }, [messages])
 
-  // const handleSendMessage = async (e: React.FormEvent) => {
-  //   e.preventDefault()
-  //   if (!input.trim() || isLoading) return
-
-  //   const userMessage: Message = {
-  //     id: Date.now().toString(),
-  //     role: "user",
-  //     content: input,
-  //     timestamp: new Date(),
-  //   }
-
-  //   setMessages((prev) => [...prev, userMessage])
-  //   setInput("")
-  //   setIsLoading(true)
-
-  //   // Simulating API call
-  //   await new Promise((resolve) => setTimeout(resolve, 1000))
-
-  //   const assistantMessage: Message = {
-  //       id: (Date.now() + 1).toString(),
-  //       role: "assistant",
-  //       content: `Acknowledged: "${userMessage.content}". This is a simulated response.`,
-  //       timestamp: new Date(),
-  //   }
-
-  //   setMessages((prev) => [...prev, assistantMessage])
-  //   setIsLoading(false)
-  // }
-
-  // Inside your AIChat component...
-
 const handleSendMessage = async (e: React.FormEvent) => {
     e.preventDefault()
     if (!input.trim() || isLoading) return
 
-    // 1. Prepare and display user message immediately
     const userMessage: Message = {
       id: Date.now().toString(),
       role: "user",
@@ -297,19 +263,14 @@ const handleSendMessage = async (e: React.FormEvent) => {
 
     setMessages((prev) => [...prev, userMessage])
     setInput("")
-    setIsLoading(true) // Start loading state (showing three dots)
+    setIsLoading(true) // Start loading state
 
     try {
-        // 2. Prepare the request payload
-        // The Vercel AI SDK expects an array of messages
         const messagesPayload = [
-            // Include existing messages for context/history
             ...messages, 
-            // Add the new user message
             userMessage
         ];
 
-        // 3. REAL API CALL to your /api/chat route
         const response = await fetch("/api/chat", {
           method: "POST",
           headers: {
@@ -324,10 +285,8 @@ const handleSendMessage = async (e: React.FormEvent) => {
 
         const data = await response.json()
         
-        // Assuming your API returns { message: text }
         const assistantResponseText = data.message; 
 
-        // 4. Display assistant's real response
         const assistantMessage: Message = {
             id: (Date.now() + 1).toString(),
             role: "assistant",
@@ -339,7 +298,6 @@ const handleSendMessage = async (e: React.FormEvent) => {
 
     } catch (error) {
         console.error("Error fetching AI response:", error)
-        // Optionally, display an error message to the user
         const errorMessage: Message = {
             id: (Date.now() + 1).toString(),
             role: "assistant",
@@ -348,7 +306,7 @@ const handleSendMessage = async (e: React.FormEvent) => {
         }
         setMessages((prev) => [...prev, errorMessage])
     } finally {
-        setIsLoading(false) // End loading state
+        setIsLoading(false)
     }
 }
 

@@ -60,10 +60,9 @@ export default function ContactSection() {
 
             const result = await response.json();
 
-            // 3. Handle the response
             if (result.success) {
                 setSubmitted(true);
-                // Reset form data and success message after a delay
+
                 setTimeout(() => {
                     setFormData({ name: "", email: "", message: "" });
                     setSubmitted(false);

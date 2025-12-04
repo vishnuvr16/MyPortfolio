@@ -97,7 +97,7 @@ export const portfolioData = {
       tags: ["React.js", "Node.js", "Express.js", "MongoDB", "WebSockets"],
       link: "https://code-clash-one.vercel.app/",
       github: "https://github.com/vishnuvr16/codeclash",
-      image: "/ai-content-studio-dashboard.jpg",
+      image: "/codeclash.jpg",
       featured: true,
     },
     {
@@ -107,7 +107,7 @@ export const portfolioData = {
       tags: ["React", "Node.js", "Express.js", "MongoDB"],
       link: "https://smart-study-scheduler.vercel.app/",
       github: "https://github.com/vishnuvr16/SmartStudyScheduler",
-      image: "/collaborative-editor-interface.jpg",
+      image: "/smartstudy.jpg",
       featured: false,
     },
     {
@@ -117,9 +117,20 @@ export const portfolioData = {
       tags: ["MongoDB", "Express.js", "React", "Node.js"],
       link: "https://cuisine-creators-omega.vercel.app/",
       github: "https://github.com/vishnuvr16/cuisine_creators",
-      image: "/mobile-task-management-app.png",
+      image: "/cuisine.jpg",
       featured: false,
     },
+    // create an object for another project which only created for practice on backend using various features like multer , cloudinary , nodemailer, helmet,prisma , passport js etc.
+    {
+      title: "Backend Practice Project",
+      description:
+        "A backend-focused project to practice various technologies and features including file uploads, email notifications, and security enhancements.",
+      tags: ["Node.js", "Express.js", "Multer", "Cloudinary", "Nodemailer", "Helmet", "Prisma", "Passport.js"],
+      link: "https://github.com/vishnuvr16/backend_practice",
+      github: "https://github.com/vishnuvr16/backend_practice",
+      image: "/backend_practice.jpg",
+      featured: false,
+    }
   ],
   strengths: [
     "Problem-solving & critical thinking",
@@ -177,7 +188,7 @@ export const portfolioData = {
     {
       platform: "LinkedIn",
       icon: "linkedin",
-      url: "https://linkedin.com/in/vishnu-vardhan-reddy",
+      url: "https://www.linkedin.com/in/vishnuvardhanreddy-gajjala",
       stat: "500+ Connections",
       description: "Professional network and career updates",
       color: "from-blue-600 to-blue-500",
@@ -188,7 +199,7 @@ export const portfolioData = {
     {
       platform: "GitHub",
       icon: "github",
-      url: "https://github.com",
+      url: "https://github.com/vishnuvr16",
       stat: "20+ Repositories",
       description: "190+ contributions in the GitHub this year",
       color: "from-slate-600 to-slate-500",
