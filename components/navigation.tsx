@@ -23,8 +23,6 @@ export default function Navigation() {
 
   const resumeUrl = "/vishnu_vardhan_reddy_resume.pdf"
   
-  const directDownloadUrl = `${window.location.origin}${resumeUrl}`
-
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50)
