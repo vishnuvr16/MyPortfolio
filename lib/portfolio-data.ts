@@ -91,7 +91,7 @@ export const portfolioData = {
   ],
   projects: [
     {
-      title: "Something Big Is Cooking",
+      title: "CollabSuite (Development in Progress)",
       description:
         "Building a full-stack platform that solves the fragmented workflow problem for student teams, freelancers, and hackathon groups. It unifies team formation, project planning, real-time collaboration, task tracking, updates, and code activity into one seamless workspace. Core system architecture and UX flows are in development — more details dropping soon.",
       tags: ["Next.js", "Prisma", "PostgreSQL", "TailwindCSS", "WebSockets"],
