@@ -91,6 +91,16 @@ export const portfolioData = {
   ],
   projects: [
     {
+      title: "Something Big Is Cooking",
+      description:
+        "Building a full-stack platform that solves the fragmented workflow problem for student teams, freelancers, and hackathon groups. It unifies team formation, project planning, real-time collaboration, task tracking, updates, and code activity into one seamless workspace. Core system architecture and UX flows are in development — more details dropping soon.",
+      tags: ["Next.js", "Prisma", "PostgreSQL", "TailwindCSS", "WebSockets"],
+      link: "",
+      github: "",
+      image: "/comingsoon.jpeg",
+      featured: true,
+    },
+    {
       title: "CodeClash - Real-time Competitive Coding Platform",
       description:
         "Built a real-time platform with matchmaking, live coding rooms, and leaderboards. Designed backend REST APIs and modular service structure.",
