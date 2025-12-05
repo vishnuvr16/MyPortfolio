@@ -97,7 +97,7 @@ export const portfolioData = {
       tags: ["Next.js", "Prisma", "PostgreSQL", "TailwindCSS", "WebSockets"],
       link: "",
       github: "",
-      image: "/comingsoon.jpeg",
+      image: "/comingsoon.png",
       featured: true,
     },
     {
