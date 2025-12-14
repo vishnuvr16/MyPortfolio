@@ -91,13 +91,22 @@ export const portfolioData = {
   ],
   projects: [
     {
-      title: "CollabSuite (Development in Progress)",
+      title: "SecureChat - End-to-End Encrypted Chat Web + Mobile App",
       description:
-        "Building a full-stack platform that solves the fragmented workflow problem for student teams, freelancers, and hackathon groups. It unifies team formation, project planning, real-time collaboration, task tracking, updates, and code activity into one seamless workspace. Core system architecture and UX flows are in development — more details dropping soon.",
-      tags: ["Next.js", "Prisma", "PostgreSQL", "TailwindCSS", "WebSockets"],
-      link: "",
-      github: "",
-      image: "/comingsoon.png",
+        "Built a privacy-first personal chat application enabling secure communication across Web and Mobile. The system supports seamless multi-device access using QR-based mobile login and ensures true end-to-end encryption. Messages are encrypted on the client using AES-256-GCM with keys derived via PBKDF2, and only ciphertext is stored on the server. Designed with a strong focus on security, offline sync, and encrypted backup & restore.",
+      tags: [
+        "Next.js",
+        "React Native",
+        "MongoDB",
+        "Redis",
+        "AES-256",
+        "PBKDF2",
+        "JWT",
+        "End-to-End Encryption"
+      ],
+      link: "https://github.com/vishnuvr16/SecureChat",
+      github: "https://github.com/vishnuvr16/SecureChat",
+      image: "/securechat.png",
       featured: true,
     },
     {
