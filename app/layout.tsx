@@ -11,8 +11,8 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Vishnu Vardhan Reddy | Full Stack Developer",
   description:
-    "Premium portfolio showcasing innovative projects, advanced technical skills, and a creative approach to full-stack development. Featuring AI-powered chat assistant.",
-  keywords: ["portfolio", "developer", "full-stack", "React", "Next.js", "TypeScript"],
+  "Full-stack developer portfolio featuring production-grade web applications built with React, Next.js, and Node.js. Showcasing real-time systems, scalable APIs, secure authentication, and end-to-end product development.",
+  keywords: ["portfolio", "developer", "full-stack", "React", "Next.js", "TypeScript","vishnu vardhan reddy gajjala","vishnuvardhanreddy","vishnu"],
   authors: [{ name: "Vishnu Vardhan Reddy" }],
   creator: "Vishnu Vardhan Reddy",
   publisher: "Vishnu Vardhan Reddy",
