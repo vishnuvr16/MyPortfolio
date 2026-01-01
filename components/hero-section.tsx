@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react"
 import Link from "next/link"
+import Snowfall from "react-snowfall"
 
 export default function HeroSection() {
   const [scrollY, setScrollY] = useState(0)
@@ -22,6 +23,8 @@ export default function HeroSection() {
           style={{ animationDelay: "2s" }}
         ></div>
       </div>
+
+      <Snowfall speed={[0.5,1]} />
 
       {/* Main Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">

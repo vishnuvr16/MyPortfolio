@@ -56,7 +56,7 @@ export default function Footer() {
           </div>
 
           {/* Social */}
-          <div>
+          {/* <div>
             <h4 className="font-semibold text-foreground mb-4">Connect</h4>
             <div className="flex gap-3">
               {[
@@ -78,7 +78,7 @@ export default function Footer() {
                 )
               })}
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Divider */}
@@ -87,14 +87,14 @@ export default function Footer() {
         {/* Bottom */}
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-foreground/60 gap-4">
           <p>© {currentYear} Vishnu Vardhan Reddy. All rights reserved.</p>
-          <div className="flex gap-6">
+          {/* <div className="flex gap-6">
             <Link href="#" className="hover:text-accent transition-colors">
               Privacy Policy
             </Link>
             <Link href="#" className="hover:text-accent transition-colors">
               Terms of Service
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

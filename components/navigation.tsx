@@ -107,7 +107,7 @@ export default function Navigation() {
               <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center glow-accent">
                 <span className="text-sm font-bold text-primary-foreground">VVR</span>
               </div>
-              <span className="text-xl font-bold gradient-text hidden sm:block">Vishnu Reddy</span>
+              <span className="text-xl font-bold gradient-text hidden sm:block">Vishnu Vardhan Reddy</span>
             </Link>
 
             {/* Desktop Menu */}
@@ -185,7 +185,7 @@ export default function Navigation() {
                 <div>
                   <h2 className="text-2xl font-bold gradient-text">Resume</h2>
                   <p className="text-sm text-muted-foreground mt-1">
-                    Vishnu Reddy - Full Stack Developer
+                    Vishnu Vardhan Reddy - Full Stack Developer
                   </p>
                 </div>
               </div>

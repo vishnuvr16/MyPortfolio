@@ -139,7 +139,6 @@ export const portfolioData = {
       image: "/cuisine.jpg",
       featured: false,
     },
-    // create an object for another project which only created for practice on backend using various features like multer , cloudinary , nodemailer, helmet,prisma , passport js etc.
     {
       title: "Backend Practice Project",
       description:
@@ -147,7 +146,7 @@ export const portfolioData = {
       tags: ["Node.js", "Express.js", "Multer", "Cloudinary", "Nodemailer", "Helmet", "Prisma", "Passport.js"],
       link: "https://github.com/vishnuvr16/backend_practice",
       github: "https://github.com/vishnuvr16/backend_practice",
-      image: "/backend_practice.jpg",
+      image: "/backend_proj.png",
       featured: false,
     }
   ],
@@ -196,7 +195,7 @@ export const portfolioData = {
     {
       platform: "TakeUForward",
       icon: "tuf",
-      url: "https://takeuforward.org/plus/profile/Vishnu16",
+      url: "https://takeuforward.org/profile/Vishnu16",
       stat: "270+ DSA Problems Solved",
       description: "A to Z - DSA course and problem solving",
       color: "from-purple-600 to-purple-500",
@@ -227,12 +226,12 @@ export const portfolioData = {
       badge: {}
     },
   ],
-  currentProjects: [
-    {
-      title: "EchoSelf - AI-Powered Personal Journal",
-      description: "An AI-driven journaling app that provides insights and mood analysis based on daily entries.",
-      progress: 65,
-      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "MongoDB", "OpenAI API"],
-    }
-  ],
+  // currentProjects: [
+  //   {
+  //     title: "EchoSelf - AI-Powered Personal Journal",
+  //     description: "An AI-driven journaling app that provides insights and mood analysis based on daily entries.",
+  //     progress: 65,
+  //     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "MongoDB", "OpenAI API"],
+  //   }
+  // ],
 }

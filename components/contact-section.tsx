@@ -188,7 +188,8 @@ export default function ContactSection() {
                   onChange={handleChange}
                   required
                   className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-foreground placeholder:text-foreground/50 focus:border-accent focus:outline-none transition-colors"
-                  placeholder="John Doe"
+                  placeholder="Vishnu Vardhan Reddy"
+                  autoComplete="off"
                 />
               </div>
 
@@ -203,8 +204,9 @@ export default function ContactSection() {
                   value={formData.email}
                   onChange={handleChange}
                   required
+                  autoComplete="off"
                   className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-foreground placeholder:text-foreground/50 focus:border-accent focus:outline-none transition-colors"
-                  placeholder="john@example.com"
+                  placeholder="vishnuvardhanreddygajjala1@gmail.com"
                 />
               </div>
 
@@ -220,14 +222,14 @@ export default function ContactSection() {
                   required
                   rows={5}
                   className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-foreground placeholder:text-foreground/50 focus:border-accent focus:outline-none transition-colors resize-none"
-                  placeholder="Tell me about your project..."
+                  placeholder="Tell me about role or work..."
                 ></textarea>
               </div>
 
               <button
                 type="submit"
                 disabled={submitted}
-                className="w-full px-6 py-3 bg-gradient-to-r from-primary to-accent text-primary-foreground rounded-lg font-semibold flex items-center justify-center gap-2 hover:shadow-lg hover:shadow-accent/30 transition-all duration-300 disabled:opacity-50 group"
+                className="w-full cursor-pointer px-6 py-3 bg-gradient-to-r from-primary to-accent text-primary-foreground rounded-lg font-semibold flex items-center justify-center gap-2 hover:shadow-lg hover:shadow-accent/30 transition-all duration-300 disabled:opacity-50 group"
               >
                 {submitted ? (
                   <>

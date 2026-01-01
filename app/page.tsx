@@ -21,7 +21,7 @@ export default function Home() {
       <ExperienceSection />
       <ProjectsSection />
       <CodingProfilesSection />
-      <CurrentWorkSection />
+      {/* <CurrentWorkSection /> */}
       <ValuesSection />
       <ContactSection />
       <Footer />
